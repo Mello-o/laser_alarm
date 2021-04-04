@@ -12,9 +12,9 @@ while True:
     
     if l > 0.5:
         led.on()
-        buzzer.on()
+        buzzer.beep(on_time = 0.1, off_time = 0.1)
     else:
         led.off()
         buzzer.off()
         
-    sleep(0.3)
+    sleep(0.5)
